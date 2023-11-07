@@ -1,0 +1,294 @@
+:root {
+    --background-page-color: rgba(30, 37, 43, 1);
+    --header-logo-color: rgba(255, 255, 255, 0.9);
+
+    --nav-list-color: rgba(255, 255, 255, 0.55);
+
+    --login-btn-text-color: rgba(255, 255, 255, 0.78); 
+    --login-btn-background-color: rgba(30, 37, 43, 1);
+    --login-btn-hover: rgba(255, 255, 255, 1);
+    --login-btn-background-hover: rgba(35, 42, 48, 1);
+
+    --sign-up-text-color: rgba(253, 245, 255, 1);
+    --sign-up-background-color: rgba(255, 110, 48, 1);
+    --sign-up-hover: rgb(255, 255, 255);
+    --sign-up-background-hover: rgba(184, 80, 36, 1);
+
+    --hero-title-color: rgba(255, 255, 255, 0.9);
+    --hero-title-point-color: rgba(255, 110, 48, 1);
+    --hero-desc-color: rgba(255, 255, 255, 0.55);
+
+    --hero-form-background-color: rgba(40, 48, 54, 1);
+    --hero-form-placeholder-color: rgba(255, 255, 255, 0.38);
+    --hero-form-input-bcolor: rgba(40, 48, 54, 1);
+
+    --hero-form-btn-color: rgba(253, 245, 255, 1);
+    --hero-form-btn-bcolor: rgba(255, 110, 48, 1);
+    --hero-form-btn-hover: rgb(212, 212, 212);
+    --hero-form-btn-bhover: rgba(184, 80, 36, 1);
+
+    --popular-title-color: rgba(255, 255, 255, 0.9);
+    --popular-desc-color: rgba(255, 255, 255, 0.55);
+
+
+
+    --brand-title-color: rgba(255, 255, 255, 0.8);
+}
+
+.body {
+    background-color: var(--background-page-color);
+    font-family: "Poppins";
+}
+
+.container {
+    width: 1224px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 26px;
+}
+
+.header-content-wrap {
+    display: flex;
+    align-items: center;
+    gap: 193px;
+}
+
+.header-logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-img {
+    margin-right: 20px;
+}
+
+.header-logo-text {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--header-logo-color);
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-list-item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.nav-list-item:hover {
+    text-decoration: underline rgba(255, 255, 255, 0.55);
+}
+
+.nav-list-link {
+    color: var(--nav-list-color);
+}
+
+.categories {
+    display: flex;
+}
+
+.categories::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-image: url("../images/header/an-header-chevron-down.svg");
+    background-repeat: no-repeat;
+    margin: 5px 0 0 3px;
+}
+
+.login-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.login-list-item {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.login-list-btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+}
+
+.login-btn {
+    color: var(--login-btn-text-color);
+    background-color: var(--login-btn-background-color);
+}
+
+.login-btn:hover {
+    color: var(--login-btn-hover);
+    background-color: var(--login-btn-background-hover);
+}
+
+.sign-up-btn {
+    color: var(--sign-up-text-color);
+    background-color: var(--sign-up-background-color);
+}
+
+.sign-up-btn:hover {
+    color: var(--sign-up-hover);
+    background-color: var(--sign-up-background-hover);
+}
+
+.hero {
+    background-image: url("../images/hero/an-hero-background.png");
+    background-size: 575px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--hero-title-color);
+    margin-top: 78px;
+}
+
+.hero-title-point {
+    color: var(--hero-title-point-color);
+}
+
+.hero-desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--hero-desc-color);
+    margin: 30px 0 60px 0;
+}
+
+.hero-content-wrap {
+    display: flex;
+}
+
+.hero-form {
+    background-image: url("../images/hero/an-hero-form-background.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 498px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-form-input {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 196px;
+    height: 21px;
+    color: var(--hero-form-placeholder-color);
+    background-color: var(--hero-form-input-bcolor);
+    display: flex;
+}
+
+.hero-form::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url("../images/hero/an-hero-form-search.svg");
+    background-repeat: no-repeat;
+    margin: 5px 5px 0px 18px;
+}
+
+.hero-form-btn {
+    width: 130px;
+    height: 48px;
+    border-radius: 10px;
+    margin-left: 85px;
+    color: var(--hero-form-btn-color);
+    background-color: var(--hero-form-btn-bcolor);
+}
+
+.hero-form-btn:hover {
+    color: var(--hero-form-btn-hover);
+    background-color: var(--hero-form-btn-bhover);
+}
+
+.social-media-list {
+    display: flex;
+    column-gap: 8px;
+    margin-top: 110px;
+}
+
+/* .popular-content-wrap {
+    display: flex;
+    flex-direction: column;
+} */
+
+.popular-title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--popular-title-color);
+}
+
+.popular-desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--popular-desc-color);
+}
+
+
+
+
+.brand-content-wrap {
+    background-image: url("../images/brand/an-brand-background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    height: 253px;
+}
+
+.brand-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--brand-title-color);
+    margin: 55px 413px;
+}
+
+.brand-list {
+    display: flex;
+    gap: 107px;
+    margin: 0 70px;
+}
+
+.brand-list-img {
+    display: inline-block;
+}
