@@ -1,5 +1,6 @@
 :root {
     --background-page-color: rgba(30, 37, 43, 1);
+    
     --header-logo-color: rgba(255, 255, 255, 0.9);
 
     --nav-list-color: rgba(255, 255, 255, 0.55);
@@ -14,26 +15,50 @@
     --sign-up-hover: rgba(255, 255, 255, 1);
     --sign-up-background-hover: rgba(184, 80, 36, 1);
 
+
     --hero-title-color: rgba(255, 255, 255, 0.9);
     --hero-title-point-color: rgba(255, 110, 48, 1);
     --hero-desc-color: rgba(255, 255, 255, 0.55);
 
     --hero-form-background-color: rgba(40, 48, 54, 1);
     --hero-form-placeholder-color: rgba(255, 255, 255, 0.38);
-    /* --hero-form-input-bcolor: rgba(40, 48, 54, 1); */
 
     --hero-form-btn-color: rgba(253, 245, 255, 1);
     --hero-form-btn-bcolor: rgba(255, 110, 48, 1);
     --hero-form-btn-hover: rgb(212, 212, 212);
     --hero-form-btn-bhover: rgba(184, 80, 36, 1);
 
+
     --popular-title-color: rgba(255, 255, 255, 0.9);
     --popular-desc-color: rgba(255, 255, 255, 0.55);
+    --popular-list-ttt-title-color: rgba(255, 255, 255, 0.78);
+    --popular-list-ttt-title-hover: rgba(255, 255, 255, 0.9);
+    --popular-list-ttt-desc-color: rgba(255, 165, 55, 0.55);
+    --popular-list-ttt-desc-hover: rgb(255, 165, 55);
 
+    --popular-list-tools-desc-color: rgba(255, 255, 255, 0.55);
+    --popular-btn-color: rgba(255, 110, 48, 1);
+    --popular-btn-bcolor: rgba(30, 37, 43, 1);
+    --popular-btn-hover: rgba(240, 95, 33, 1);
+    --popular-btn-bhover: rgba(35, 42, 48, 1);
 
 
     --brand-title-color: rgba(255, 255, 255, 0.8);
 
+
+    --newcomer-title-color: rgba(255, 255, 255, 0.9);
+    --newcomer-desc-color: rgba(255, 255, 255, 0.55);
+    --newcomer-btn-color: rgba(253, 245, 255, 1);
+    --newcomer-btn-bcolor: rgba(255, 110, 48, 1);
+    --newcomer-btn-hover: rgb(212, 212, 212);
+    --newcomer-btn-bhover: rgba(184, 80, 36, 1);
+
+    --newcomer-list-tool-title-color: rgba(255, 255, 255, 0.78);
+    --newcomer-list-tool-title-hover: rgba(255, 255, 255, 0.9);
+    --newcomer-list-tool-desc-color: rgba(255, 165, 55, 0.55);
+    --newcomer-list-tool-desc-hover: rgba(255, 165, 55, 1);
+    --newcomer-list-item-desc-color: rgba(255, 255, 255, 0.55);
+    --newcomer-list-item-desc-hover: rgba(255, 255, 255, 0.78);
 
 
     --join-title-color: rgba(255, 255, 255, 0.9);
@@ -45,15 +70,29 @@
     --join-form-btn-bcolor: rgba(255, 110, 48, 1);
     --join-form-btn-hover: rgba(255, 255, 255, 1);
     --join-form-btn-bhover: rgba(184, 80, 36, 1);
+
+
+    --footer-logo-color: rgba(255, 255, 255, 0.9);
+    --footer-copyright-color: rgba(255, 255, 255, 0.9);
+    --footer-desc-color: rgba(255, 255, 255, 0.55);
+    --footer-info-list-title-color: rgba(255, 255, 255, 0.9);
+    --footer-info-list-desc-color: rgba(255, 255, 255, 0.55);
+
+
+    --likes-and-folders-bhover: rgba(40, 48, 54, 1);
+    --visit-btn-color: rgba(253, 245, 255, 0.55);
+    --visit-btn-hover: rgba(255, 255, 255, 1);
+    --visit-btn-bhover: rgba(255, 110, 48, 1);
 }
 
 .body {
     background-color: var(--background-page-color);
     font-family: "Poppins";
+    font-size: 16px;
 }
 
 .container {
-    width: 1224px;
+    width: 1254px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -93,7 +132,6 @@
 }
 
 .nav-list-item {
-    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0em;
@@ -128,7 +166,6 @@
 }
 
 .login-list-item {
-    font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 0em;
@@ -141,6 +178,10 @@
 }
 
 .login-btn {
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;    
     color: var(--login-btn-text-color);
     background-color: var(--login-btn-background-color);
 }
@@ -151,6 +192,10 @@
 }
 
 .sign-up-btn {
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;    
     color: var(--sign-up-text-color);
     background-color: var(--sign-up-background-color);
 }
@@ -162,10 +207,9 @@
 
 .hero {
     background-image: url("../images/hero/an-hero-background.png");
-    background-size: 575px;
     background-position: right bottom;
     background-repeat: no-repeat;
-    margin-bottom: 200px;
+    padding-top: 64px;
 }
 
 .hero-title {
@@ -201,10 +245,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 15px;
-    width: 498px;
-    height: 64px;
     display: flex;
     align-items: center;
+    padding: 8px 11px;
 }
 
 .hero-form-input {
@@ -227,14 +270,17 @@
     display: inline-block;
     background-image: url("../images/hero/an-hero-form-search.svg");
     background-repeat: no-repeat;
-    margin: 5px 5px 0px 18px;
+    margin: 5px 5px 0px 8px;
 }
 
 .hero-form-btn {
-    width: 130px;
-    height: 48px;
-    border-radius: 10px;
-    margin-left: 85px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;    
+    padding: 12px 36px;
+    border-radius: 9px;
+    margin-left: 82px;
     color: var(--hero-form-btn-color);
     background-color: var(--hero-form-btn-bcolor);
 }
@@ -250,11 +296,6 @@
     margin-top: 110px;
 }
 
-/* .popular-content-wrap {
-    display: flex;
-    flex-direction: column;
-} */
-
 .popular-title {
     font-size: 48px;
     font-weight: 500;
@@ -264,12 +305,17 @@
     color: var(--popular-title-color);
 }
 
+.popular {
+    padding-top: 200px;
+}
+
 .popular-desc {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.7;
     letter-spacing: 0em;
     text-align: center;
+    margin-top: 24px;
     color: var(--popular-desc-color);
 }
 
@@ -277,15 +323,131 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
+    row-gap: 100px;
+    margin-top: 100px;
+}
+
+.popular-list-item {
+    padding: 33px;
+}
+
+.popular-list-item:hover {
+    background-image: url(../images/popular/an-popular-list-item-bhover.png);
+    background-size: 386px;
+    background-repeat: no-repeat;
+    transform: translate(1px, -20px);
 }
 
 .popular-list-tools-title {
     display: flex;
     flex-basis: calc((100% - 48px) / 3);
+    gap: 30px;
 }
 
+.popular-list-ttt-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--popular-list-ttt-title-color);
+}
 
+.popular-list-ttt-title:hover {
+    color: var(--popular-list-ttt-title-hover);
+}
 
+.popular-list-ttt-desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;  
+    margin-top: 3px; 
+    color: var(--popular-list-ttt-desc-color); 
+}
+
+.popular-list-ttt-desc:hover {
+    color: var(--popular-list-ttt-desc-hover);
+}
+
+.popular-list-tools-desc {
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--popular-list-tools-desc-color);  
+    margin-top: 25px;  
+}
+
+.popular-list-tools-additional-list {
+    display: flex;
+    margin-top: 25px;
+}
+
+.popular-list-to-ad-list-item {
+    padding: 7px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.popular-list-to-ad-list-item-like:hover {
+    background-image: url(../images/popular/an-active-like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--likes-and-folders-bhover);
+}
+
+.popular-list-to-ad-list-item-folder:hover {
+    background-image: url(../images/popular/an-active-folder.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--likes-and-folders-bhover);
+}
+
+.popular-list-to-ad-list-item-visit {
+    margin-top: 10px;
+    margin-left: 114px;
+}
+
+.popular-list-to-ad-list-btn {
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left; 
+    border-radius: 8px;   
+    padding: 9px 35px;
+    color: var(--visit-btn-color);
+}
+
+.popular-list-to-ad-list-btn:hover {
+    color: var(--visit-btn-hover);
+    background-color: var(--visit-btn-bhover);
+}
+
+.popular-btn {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;    
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 17px 38px;
+    color: var(--popular-btn-color);
+    background-color: var(--popular-btn-bcolor);
+    display: block;
+    margin: 100px auto 0 auto;
+}
+
+.popular-btn:hover {
+    color: var(--popular-btn-hover);
+    background-color: var(--popular-btn-bhover);
+}
+
+.brand {
+    padding-top: 200px;
+}
 
 .brand-content-wrap {
     background-image: url("../images/brand/an-brand-background.png");
@@ -316,13 +478,173 @@
     display: inline-block;
 }
 
+.newcomer {
+    padding-top: 200px;
+}
 
+.newcomer-content-wrap {
+    display: flex;
+}
 
+.newcomer-title-wrap {
+    width: 800px;
+    margin-top: 10px;
+}
+
+.newcomer-title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0em;
+    text-align: left;   
+    color: var(--newcomer-title-color); 
+}
+
+.newcomer-desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0em;
+    text-align: left;  
+    color: var(--newcomer-desc-color);  
+    margin-top: 30px;
+}
+
+.newcomer-btn {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;  
+    color: var(--newcomer-btn-color); 
+    background-color: var(--newcomer-btn-bcolor); 
+    padding: 16px 40px;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.newcomer-btn:hover {
+    color: var(--newcomer-btn-hover);
+    background-color: var(--newcomer-btn-bhover);
+}
+
+.newcomer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 20px;
+}
+
+.newcomer-list-item {
+    flex-basis: calc((600px - 24px) / 2);
+    padding: 33px;
+}
+
+.newcomer-list-item:hover {
+    background-image: url(../images/newcomer/an-newcomer-list-item-bhover.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    transform: translate(1px, -20px);
+}
+
+.newcomer-list-title-wrap {
+    display: flex;
+}
+
+.newcomer-list-title-img {
+    margin-right: 30px;
+}
+
+.newcomer-list-tool-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;  
+    color: var(--newcomer-list-tool-title-color);  
+}
+
+.newcomer-list-tool-title:hover {
+    color: var(--newcomer-list-tool-title-hover);
+}
+
+.newcomer-list-tool-desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left; 
+    color: var(--newcomer-list-tool-desc-color);   
+}
+
+.newcomer-list-tool-desc:hover {
+    color: var(--newcomer-list-tool-desc-hover);
+}
+
+.newcomer-list-item-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0em;
+    text-align: left; 
+    margin-top: 25px; 
+    color: var(--newcomer-list-item-desc-color);  
+}
+
+.newcomer-list-item-desc:hover {
+    color: var(--newcomer-list-item-desc-hover);
+}
+
+.newcomer-list-item-additional-list {
+    margin-top: 25px;
+    display: flex;
+}
+
+.newcomer-list-item-ad-list-item {
+    padding: 7px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.newcomer-like:hover {
+    background-image: url(../images/popular/an-active-like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--likes-and-folders-bhover);
+}
+
+.newcomer-folder:hover {
+    background-image: url(../images/popular/an-active-folder.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--likes-and-folders-bhover);
+}
+
+.newcomer-list-item-ad-list-item-visit {
+    margin-top: 10px;
+    margin-left: 34px;
+}
+
+.newcomer-list-item-ad-list-btn {
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left; 
+    border-radius: 8px;   
+    padding: 9px 35px;
+    color: var(--visit-btn-color);
+}
+
+.newcomer-list-item-ad-list-btn:hover {
+    color: var(--visit-btn-hover);
+    background-color: var(--visit-btn-bhover);
+}
 
 
 
 
 .join {
+    padding-top: 250px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -351,7 +673,7 @@
 
 .join-form {
     height: 64px;
-    background-image: url(../images/join/join-form-background.png);
+    background-image: url(../images/join/an-join-form-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -362,7 +684,7 @@
 
 .join-form-label-input {
     background-color: var(--join-form-label-input-bcolor);
-    margin-left: 360px;
+    margin-left: 375px;
 }
 
 .join-form-btn {
@@ -376,4 +698,52 @@
 .join-form-btn:hover {
     color: var(--join-form-btn-hover);
     background-color: var(--join-form-btn-bhover);
+}
+
+
+.footer-logo-wrap {
+    display: flex;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left; 
+    color: var(--footer-logo-color);   
+}
+
+.footer-copyright {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;  
+    color: var(--footer-copyright-color);  
+}
+
+.footer-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-desc-color);
+}
+
+.footer-info-item-title {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;   
+    color: var(--footer-info-list-title-color); 
+}
+
+.footer-info-item {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: left;   
+    color: var(--footer-info-list-desc-color); 
 }
