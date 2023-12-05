@@ -338,7 +338,9 @@
 }
 
 .popular-list-item {
-    padding: 33px;
+    padding: 35px 33px 31px 33px;
+    transition: 0.4s;
+    height: 290px;
 }
 
 .popular-list-item:hover {
@@ -547,12 +549,13 @@
 
 .newcomer-list-item {
     flex-basis: calc((600px - 24px) / 2);
-    padding: 33px;
+    padding: 35px 33px 31px 33px;
+    transition: 0.4s;
+    height: 288px;
 }
 
 .newcomer-list-item:hover {
     background-image: url(../images/newcomer/an-newcomer-list-item-bhover.png);
-    background-size: 300px;
     background-repeat: no-repeat;
     transform: translate(1px, -20px);
 }
@@ -563,6 +566,11 @@
 
 .newcomer-list-title-img {
     margin-right: 30px;
+}
+
+.procreate-img {
+    width: 65px;
+    height: 63px;
 }
 
 .newcomer-list-tool-title {
